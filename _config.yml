@@ -14,30 +14,30 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: MkDocs Documentation Jekyll
-email: your-email@domain.com
-author: Dinosaur Avocado
+title: Stanford Research Computing
+email: research-computing-support@stanford.edu
+author: Stanford Research Computing Center
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The Stanford Research Computing Center offers resources for compute, storage,
+  and office hours for user support.
 
 # DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
-baseurl: "/mkdocs-jekyll" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 
 # This is mostly for testing
 url: "" # the base hostname & protocol for your site
 
 # Social (First three Required)
-repo: "https://github.com/vsoch/mkdocs-jekyll"
-github_user: "vsoch"
-github_repo: "mkdocs-jekyll"
+repo: "https://github.com/stanford-rc/stanford-rc.github.io"
+github_user: "stanford-rc"
+github_repo: "stanford-rc.github.io"
+# Based off of https://www.github.com/vsoch/mkdocs-jekyll
 
 # Optional
-twitter: vsoch
-linkedin: vsochat
-dockerhub: vanessa
-# google-analytics: UA-XXXXXXXXXX
+twitter: StanfordCompute
+#linkedin: vsochat
+dockerhub: srcc
+
 # Image and (square) dimension for logo (don't start with /)
 # If commented, will use material hat theme
 # logo: "assets/img/logo/SRCC-square-red.png"

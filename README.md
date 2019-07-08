@@ -1,23 +1,18 @@
-# MkDocs Jekyll Theme
+# Stanford Research Computing Center Documentation Portal
 
-[![CircleCI](https://circleci.com/gh/vsoch/mkdocs-jekyll/tree/master.svg?style=svg)](https://circleci.com/gh/vsoch/mkdocs-jekyll/tree/master)
+This is a [mkdocs-jekyll](https://github.com/vsoch/mkdocs-jekll) template
+that provides a user portal for Stanford Research Computing Documentation
+bases.
 
-![assets/img/mkdocs-jekyll.png](assets/img/mkdocs-jekyll.png)
-
-This is a [starter template](https://vsoch.github.com/mkdocs-jekyll/) for a mkdocs jekyll theme, based on these two
-previous arts:
-
- - [alexcarpenter/material-jekyll-theme](http://alexcarpenter.github.io/material-jekyll-theme)
- - [squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material)
 
 ## Usage
 
 ### 1. Get the code
 
-You can clone the repository right to where you want to host the docs:
+You can clone the repository:
 
 ```bash
-git clone https://github.com/vsoch/mkdocs-jekyll.git docs
+git clone https://github.com/stanford-rc/stanford-rc.github.io
 cd docs
 ```
 
@@ -26,13 +21,23 @@ cd docs
 To edit configuration values, customize the [_config.yml](_config.yml).
 To add pages, write them into the [pages](pages) folder. 
 You define urls based on the `permalink` attribute in your pages,
-and then add them to the navigation by adding to the content of [_data/toc.myl](_data/toc.yml).
-
-### 3. Options
-
 Most of the configuration values in the [_config.yml](_config.yml) are self explanatory,
 and for more details, see the [about page](https://vsoch.github.io/mkdocs-jekyll/about/)
 rendered on the site.
+
+#### Navigation
+
+The [_data/toc.myl](_data/toc.yml) controls navigation of the site.
+
+#### Links
+
+By way of being a portal, this site's main page is a series of cards linking
+to other sites. Importantly, the metadata (URL, logo, name) comes from 
+[_data/metadata.yml](_data/metadata.yml). If you want to change a value,
+that's the place to do it. Logos (including raw files) can be found in
+[stanford-rc/logos](https://github.com/stanford-rc/logos).
+Take a look at the rendered metadata (available to other sites) at
+[http://localhost:4000/data.json](http://localhost:4000/data.json).
 
 ### 4. Serve
 

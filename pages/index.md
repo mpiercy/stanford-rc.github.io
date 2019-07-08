@@ -1,43 +1,91 @@
 ---
 layout: page
-title: Material Jekyll Theme
+title: SRCC Documentation Portal
 permalink: /
 ---
 
-# Welcome to MkDocs Jekyll
+# Welcome to Stanford Research Computing
 
-This is a starter template for a mkdocs jekyll theme.
+These are documentation pages to assist you with using our resources. For
+events, staff, and the official Stanford page, please see [srcc.stanford.edu](https://srcc.stanford.edu).
 
-![assets/img/macbook-preview.png](assets/img/macbook-preview.png)
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,100,100italic,400italic,500,500italic,700,700italic&subset=latin,cyrillic);
 
-## Purpose
+.wrapper {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+}
 
-GitHub pages uses Jekyll natively, so when I make documentation, I typically
-look for Jekyll templates. Why? Using Jekyll means that I can use markdown,
-and allow for users to easily contribute, and build automatically just by
-way of pushing to a master branch (or general GitHub pages).
-I've liked MkDocs in the past, but it required me to use a special renderer.
-I also felt limited in my ability to customize it. The same is true for
-mkdocs material. It's absolutely gorgeous, but was not suited for
-my GitHub pages and customization needs. For this reason, I've spent
-some time creating a custom Jekyll template that is (almost) as beautiful,
-and includes all the features that I might want.
+.box {
+	background-color: #fafafa;
+	box-shadow: 0px 2px 2px rgba(0,0,0,.2),	0px 0px 2px rgba(0,0,0,.2);
+	width: 100%;
+	border-radius: 2px;
+	margin:20px;
+	display:flex;
+	flex-direction:column;
+	cursor:pointer;
+}
 
-## Features
+.box:hover {
+	box-shadow: 0px 15px 20px rgba(0,0,0,.25),0px 0px 30px rgba(0,0,0,.1);
+}
 
-What are these features? You should see the {% include doc.html name="Getting Started" path="getting-started" %}
-guide for a complete summary. Briefly:
+.box .text {
+	padding: 24px;
+}
 
- - *User interaction* including consistent permalinks, links to ask questions via GitHub issues, and edit the file on GitHub directly.
- - *Search* across posts, documentation, and other site pages, with an ability to exclude from search.
- - *External Search* meaning an ability to link any page tag to trigger an external search.
- - *Documentation* A documentation collection that was easy to organize on the filesystem, render with nested headings for the user, and refer to in markdown.
- - *Pages* A separate folder for more traditional pages (e.g, about).
- - *Navigation*: Control over the main navigation on the left of the page, and automatic generation of table of contents for each page on the right.
- - *News* A posts feed for news and updates, along with an archive (organized by year).
- - *Templates* or specifically, "includes" that make it easy to create an alert, documentation link, or other content.
- - *Continuous Integration* recipes to preview the site
+.box .bb {
+	border: 1px solid red;
+}
 
+.box .title {
+	color:  black;
+	font-weight: 500;
+	font-size: 20px;
+	margin-top: -2px;
+	margin-bottom: 16px;
+}
 
-For features, getting started with development, see the {% include doc.html name="Getting Started" path="getting-started" %} page. Would you like to request a feature or contribute?
-[Open an issue]({{ site.repo }}/issues)
+.box p {
+	color: rgba(0,0,0,.5);
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0px;
+}
+
+.box .act {
+	padding: 8px 0;
+	text-align: right;
+}
+
+.card-button {
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 13px;
+	padding: 12px 10px;
+	color: #00a5ef;
+	font-weight: 500;
+	margin-right: 8px;
+	cursor: pointer;
+}
+</style>
+<div class="wrapper">
+  {% for doc in site.data.metadata %}<div class="box">
+  <div class="text">
+    <div class="title">{{ doc.name }}</div>
+      <p><img src="{{ doc.logo }}" style="height:160px; position:absolute">
+       <span style="width:50%; float:right">{{ doc.description }}</span>
+      </p>
+    </div>
+    <div class="act">
+	<a href="{{ doc.url }}" target="_blank"><div class="card-button">Documentation</div></a>
+    </div>
+  </div>{% endfor %}
+</div>
+
+For getting started with a general linux cluster, see the {% include doc.html name="Getting Started" path="getting-started" %} page. If you need help or want to improve the site, please [open an issue]({{ site.repo }}/issues) or
+contact us at [{{ site.email }}](mailto:{{ site.email }})
