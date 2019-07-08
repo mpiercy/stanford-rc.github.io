@@ -37,6 +37,7 @@ github_repo: "stanford-rc.github.io"
 twitter: StanfordCompute
 #linkedin: vsochat
 dockerhub: srcc
+google-analytics: UA-143467500-1
 
 # Image and (square) dimension for logo (don't start with /)
 # If commented, will use material hat theme
