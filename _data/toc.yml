@@ -1,12 +1,10 @@
 - title: "Getting Started"
   url: "docs/getting-started"
-#  children:
-#    - title: Features
-#      url: "docs/getting-started#getting-started"
-#    - title: Development
-#      url: "docs/getting-started#development"
-#    - title: Customization
-#      url: "docs/getting-started#customization"
+- title: "Software"
+  url: "docs/software"
+  children:
+    - title: Installing Software
+      url: "docs/how-to-install"
 - title: "About"
   url: "about"
 - title: "News"

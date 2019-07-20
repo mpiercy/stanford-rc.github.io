@@ -4,7 +4,6 @@ This is a [mkdocs-jekyll](https://github.com/vsoch/mkdocs-jekll) template
 that provides a user portal for Stanford Research Computing Documentation
 bases.
 
-
 ## Usage
 
 ### 1. Get the code
@@ -15,6 +14,10 @@ You can clone the repository:
 git clone https://github.com/stanford-rc/stanford-rc.github.io
 cd docs
 ```
+
+If you need to convert from html to markdown, we have added
+a [scripts/html2md.py](scripts/html2md.py) to get you started.
+
 
 ### 2. Customize
 
