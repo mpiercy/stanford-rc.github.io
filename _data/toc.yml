@@ -7,6 +7,13 @@
       url: "docs/software/"
     - title: Installing Software
       url: "docs/software/how-to-install/"
+- title: "Job Management"
+  url: "docs/job-managers"
+  children:
+    - title: Overview
+      url: "docs/job-managers/"
+    - title: slurm
+      url: "docs/job-managers/slurm"
 - title: "About"
   url: "about"
 - title: "News"
