@@ -3,8 +3,10 @@
 - title: "Software"
   url: "docs/software"
   children:
+    - title: Overview
+      url: "docs/software/"
     - title: Installing Software
-      url: "docs/how-to-install"
+      url: "docs/software/how-to-install/"
 - title: "About"
   url: "about"
 - title: "News"
