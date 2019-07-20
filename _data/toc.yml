@@ -1,5 +1,10 @@
 - title: "Getting Started"
   url: "docs/getting-started"
+  children:
+    - title: Overview
+      url: "docs/getting-started/"
+    - title: Resource Best Practices
+      url: "docs/getting-started/resource-best-practices"
 - title: "Software"
   url: "docs/software"
   children:
