@@ -22,13 +22,13 @@ Most clusters have a queue available for interactive use called debug, testing, 
 {% include alert.html type="question" title="Which of these commands would be okay to run on a login node?" content="
  1. python physics_sim.py<br>
  2. make<br>
- <span class='correct'>3. create_directories.sh<br></span>
+ <span class='correct-1'>3. create_directories.sh<br></span>
  4. molecular_dynamics_2<br>
  5. tar -xzf R-3.3.0.tar.gz<br>
- <span class='correct'>6. sbatch run_my_job.sbatch<br></span>
- <span class='correct'>7. srun -p normal --mem=24GB --pty bash</span>" %}
+ <span class='correct-1'>6. sbatch run_my_job.sbatch<br></span>
+ <span class='correct-1'>7. srun -p normal --mem=24GB --pty bash</span>" %}
 
-<button onclick="$('.correct').css('font-weight', 800)" class="btn btn-primary">Show Answer</button>
+<button onclick="$('.correct-1').css('font-weight', 800)" class="btn btn-primary">Show Answer</button>
 
 The answer is that 3, 6, and 7 are definitely okay - creating directories or interacting with
 slurm to launch jobs is what is expected on a login node! 
@@ -76,16 +76,8 @@ You can generally [install software yourself](/docs/software/how-to-install), bu
 
 Always use the default compilers if possible. Newer compilers are great, but older stuff generally has less compatibility issues.
 
-
->  ## Key Points
->
->   *  Don’t run stuff on the login node.
->
->
->  *  Again, don’t run stuff on the login node.
->
->
->  *  Don’t be a bad person and run stuff on the login node.
->
->
+>  <strong> Too Long, Didn't Read!
+>  - Don’t run stuff on the login node.
+>  - Again, don’t run stuff on the login node.
+>  - Don’t be a bad person and run stuff on the login node.
 

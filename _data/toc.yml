@@ -11,7 +11,9 @@
     - title: Overview
       url: "docs/software/"
     - title: Installing Software
-      url: "docs/software/how-to-install/"
+      url: "docs/software/how-to-install"
+    - title: Software Guides
+      url: "docs/software/guides/"
 - title: "Job Management"
   url: "docs/job-managers"
   children:
