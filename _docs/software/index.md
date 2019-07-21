@@ -12,7 +12,8 @@ that is generally available across our resources.
 
 ## Installation
 
- - [How to Install your own Software](/docs/software/how-to-install/)
+ - [Accessing Software](/docs/software/accessing-software)
+ - [How to Install your own Software](/docs/software/how-to-install)
 
 For using specific software, see our general [guides](guides/).
 If you are looking for information about software pertaining to a specific

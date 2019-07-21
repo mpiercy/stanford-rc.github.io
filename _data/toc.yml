@@ -10,6 +10,8 @@
   children:
     - title: Overview
       url: "docs/software/"
+    - title: Accessing Software
+      url: "docs/software/accessing-software"
     - title: Installing Software
       url: "docs/software/how-to-install"
     - title: Software Guides
