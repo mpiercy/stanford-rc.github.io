@@ -16,5 +16,7 @@ and otherwise manage jobs.
  - [Batch Job Examples](batch-job-examples) or scripts that can be submit to run jobs.
  - [Scheduling Jobs](scheduling-jobs) to run
 
+<br>
+
 If you are looking for information about SLURM pertaining to a specific
 resource, please go back to [the home page](/) and select the resource of interest.

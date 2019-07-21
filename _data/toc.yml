@@ -23,8 +23,6 @@
       url: "docs/job-managers/"
     - title: slurm
       url: "docs/job-managers/slurm"
-- title: "Tutorials"
-  url: "docs/tutorials"
 - title: "About"
   url: "about"
 - title: "News"
