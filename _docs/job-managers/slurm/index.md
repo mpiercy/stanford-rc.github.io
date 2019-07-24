@@ -15,8 +15,6 @@ and otherwise manage jobs.
 ## Jobs
 
  - [Batch Job Examples](batch-job-examples) or scripts that can be submit to run jobs.
- - [Scheduling Jobs](scheduling-jobs) to run
-
 
 ## External Resources
 

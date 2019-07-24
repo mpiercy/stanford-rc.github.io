@@ -15,11 +15,5 @@ First, you should take a look over our general pages to discuss the following:
  - [Job Managers](/docs/job-managers/)
  - [Tutorials](/docs/tutorials/)
 
-## Guides
-
-Or look into getting started with any of the following:
-
- - [Transfer Files](transfer-files)
-
 If you are looking for information about getting started using a specific
 resource, please go back to [the home page](/) and select the resource of interest.
