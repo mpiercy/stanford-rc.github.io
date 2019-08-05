@@ -23,10 +23,14 @@ a [scripts/html2md.py](scripts/html2md.py) to get you started.
 
 To edit configuration values, customize the [_config.yml](_config.yml).
 To add pages, write them into the [pages](pages) folder. 
-You define urls based on the `permalink` attribute in your pages,
+You define urls based on the `permalink` attribute in your pages, and
+then add them to the navigation by adding to the content of [_data/toc.myl](_data/toc.yml).
+
+### 3. Options
+
 Most of the configuration values in the [_config.yml](_config.yml) are self explanatory,
 and for more details, see the [about page](https://vsoch.github.io/mkdocs-jekyll/about/)
-rendered on the site.
+rendered on the upstream site.
 
 #### Navigation
 

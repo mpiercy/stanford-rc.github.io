@@ -73,16 +73,33 @@ events, staff, and the official Stanford page, please see [srcc.stanford.edu](ht
 	cursor: pointer;
 }
 </style>
+
+<h2>Services</h2>
 <div class="wrapper">
-  {% for doc in site.data.metadata %}<div class="box">
+  {% for service in site.data.metadata.services %}<div class="box">
   <div class="text">
-    <div class="title">{{ doc.name }}</div>
-      <p><img src="{{ doc.logo }}" style="height:160px; position:absolute">
-       <span style="width:50%; float:right">{{ doc.description }}</span>
+    <div class="title">{{ service.name }}</div>
+      <p><img src="{{ service.logo }}" style="height:140px; position:absolute">
+       <span style="width:50%; float:right">{{ service.description }}</span>
       </p>
     </div>
     <div class="act">
-	<a href="{{ doc.url }}" target="_blank"><div class="card-button">Documentation</div></a>
+	<a href="{{ service.url }}" target="_blank"><div class="card-button">Documentation</div></a>
+    </div>
+  </div>{% endfor %}
+</div>
+
+<h2>Resources</h2>
+<div class="wrapper">
+  {% for resource in site.data.metadata.resources %}<div class="box">
+  <div class="text">
+    <div class="title">{{ resource.name }}</div>
+      <p><img src="{{ resource.logo }}" style="height:160px; position:absolute">
+       <span style="width:50%; float:right">{{ resource.description }}</span>
+      </p>
+    </div>
+    <div class="act">
+	<a href="{{ resource.url }}" target="_blank"><div class="card-button">Documentation</div></a>
     </div>
   </div>{% endfor %}
 </div>
