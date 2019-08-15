@@ -46,7 +46,7 @@ ml load gromacs/2016.3
 
 
 ## Long Running Jobs
-Let's say you have a long running job with low memory, and the memory grows over time. Here is an example that would make sure that the job goes for 3 days. The QOS (quality of service) directive tells the job manager that the job will be running longer than a day.
+Let's say you have a long running job with low memory, and the memory grows over time. Here is an example that would make sure that the job goes for 3 days. The QOS (quality of service) directive tells the job manager that the job will be running longer than a day.  On Sherlock you can run up to 7 days in the long QOS.
 ```
 #!/bin/bash
 #SBATCH --job-name=normaljob
